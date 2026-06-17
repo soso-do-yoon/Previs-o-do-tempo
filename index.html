@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clima</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topo">
+    <h1>CLIMA</h1>
+    <p>consulta de tempo em tempo real</p>
+  </div>
+
+  <div class="busca">
+    <input type="text" id="cidade" placeholder="ex: Curitiba" />
+    <button onclick="buscarClima()">IR</button>
+  </div>
+
+  <p id="erro">cidade não encontrada.</p>
+  <p id="loading">buscando...</p>
+
+  <div id="resultado">
+    <div class="linha">
+      <span id="nomeCidade"></span>
+      <img id="icone" src="" alt="" />
+    </div>
+    <div class="temperatura" id="temperatura"></div>
+    <div class="info">
+      <span id="descricao"></span>
+      <span id="umidade"></span>
+      <span id="vento"></span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
